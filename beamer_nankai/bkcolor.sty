@@ -87,7 +87,7 @@
 \setbeamertemplate{blocks}[rounded][shadow=true]
 
 % Background
-\pgfdeclareimage[width=\paperwidth,height=0.95\paperheight]{bg}{nkbackground.png}
+\pgfdeclareimage[width=\paperwidth,height=0.95\paperheight]{bg}{bkbackground.png}
 \setbeamertemplate{background}{\pgfuseimage{bg}}
 
 %--------------------------------------------------------
@@ -149,17 +149,18 @@
 %--------------------------------------------------------
 
 % Define colour names
-\definecolor{nkpurple}{rgb}{0.44140 0.10156 0.37109} %#(113,26,95)
+%\definecolor{nkpurple}{rgb}{0.44140 0.10156 0.37109} %#(113,26,95)
+\definecolor{bkblue}{rgb}{0.01172 0.34766 0.57031} %#(3,89,146)
 %\setbeamercolor{nktitle}{bg=white,fg=nkpurple}
 %\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true]
 % Set element colours
-\setbeamercolor{title}{bg=black!5!white, fg=nkpurple}
-\setbeamercolor{subtitle}{bg=white, fg=nkpurple}
+\setbeamercolor{title}{bg=black!5!white, fg=bkblue}
+\setbeamercolor{subtitle}{bg=white, fg=bkblue}
 \setbeamercolor{titlepageheader}{bg=white,fg=black}
 \setbeamercolor{titlepagefooter}{bg=white,fg=black}
-\setbeamercolor{block title}{fg=white,bg=nkpurple}
-\setbeamercolor{block body}{fg=black,bg=nkpurple!10!white}
-\setbeamercolor{structure}{bg=white, fg=nkpurple}
+\setbeamercolor{block title}{fg=white,bg=bkblue}
+\setbeamercolor{block body}{fg=black,bg=bkblue!10!white}
+\setbeamercolor{structure}{bg=white, fg=bkblue}
 % \setbeamercolor{alerted text}{fg=darkOrange}
 
 %--------------------------------------------------------
@@ -184,22 +185,19 @@
 \setbeamertemplate{title page}
 {%
 \begin{beamercolorbox}[sep=0cm,right,wd=\paperwidth,ht=\titlepageheaderheight,rightskip=\headingleftmargin]{titlepageheader}
-\includegraphics[width=0.2720\paperwidth]{nk_logo.png}
+\includegraphics[width=0.2720\paperwidth]{bk_logo.png}
 \vskip0.0361\titlepageheaderheight
 \end{beamercolorbox}
 \begin{beamercolorbox}[center,wd=0.87\paperwidth,ht=\titlepagemaintitleblockheight,rounded=true,shadow=true]{title}
-  \usebeamerfont{title}\inserttitle\\
-  \vskip\titlepagespaceunderdate%
+  \usebeamerfont{title}\inserttitle\vskip\titlepagespaceunderdate%
   \usebeamerfont{subtitle}\insertsubtitle
   \vskip\titlepagespaceunderdate%
 \end{beamercolorbox}
 %\nointerlineskip%
 %\vskip-1pt%
 \begin{beamercolorbox}[center,wd=\paperwidth,ht=\titlepagenamedateblockheight]{white}
-      \usebeamerfont{author}\insertauthor\\
-      \vskip\titlepagespaceunderdate%
-	  \usebeamerfont{institute}\insertinstitute\\
-	  \vskip\titlepagespaceunderdate%
+      \usebeamerfont{author}\insertauthor\vskip\titlepagespaceunderdate%
+	  \usebeamerfont{institute}\insertinstitute\vskip\titlepagespaceunderdate%
       \usebeamerfont{date}\insertdate
       \vskip\titlepagespaceunderdate%
 \end{beamercolorbox}%
@@ -208,8 +206,7 @@
 }
 \begin{comment}
 \begin{beamercolorbox}[center,wd=0.92\paperwidth,ht=\titlepagemaintitleblockheight,rounded=true,shadow=true]{title}
-  \usebeamerfont{title}\inserttitle\\
-  \vskip\titlepagespaceunderdate%
+  \usebeamerfont{title}\inserttitle\vskip\titlepagespaceunderdate%
   \usebeamerfont{subtitle}\insertsubtitle
   \vskip\titlepagespaceunderdate%
 \end{beamercolorbox}%
@@ -226,7 +223,8 @@
   \leavevmode%
   \hbox{%
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-    \usebeamerfont{author in head/foot}\insertshortauthor~~(\insertshortinstitute)
+    \usebeamerfont{author in head/foot}\insertshortauthor~~
+    % (\insertshortinstitute)
   \end{beamercolorbox}%
   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
     \usebeamerfont{title in head/foot}\insertshorttitle
@@ -283,4 +281,4 @@
 %    \hbox to\textwidth{\hskip-\Gm@lmargin\pgfuseshading{beamer@topshade}\hskip-\Gm@rmargin}
 %    \vskip-2pt
 }
-\setbeamercolor{frametitle}{bg=black!5!white,fg=nkpurple}
+\setbeamercolor{frametitle}{bg=black!5!white,fg=bkblue}

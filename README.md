@@ -1,7 +1,5 @@
-# Beamer-Style-of-NKU
-南开大学LaTeX-beamer幻灯片模板
-
-Dec, 17th, 2019 增加：南开大学课程报告模板，可用于课程大作业的报告撰写等
+# Beamer-Style-of-USTB
+北京科技大学LaTeX-beamer幻灯片模板
 
 两个模板对在LaTeX中常用的格式，包括itemize, enumerate, description, 图片，表格，代码，伪代码等等，都给出了示例。
 
@@ -9,11 +7,11 @@ Dec, 17th, 2019 增加：南开大学课程报告模板，可用于课程大作�
 
 <br/>
 
-## LaTeX beamer style for Nankai University
+## LaTeX beamer style for University of Science and Technology Beijing
 
-[LaTeX beamer style for Nankai University](./beamer_nankai)
-1. This is an unofficial LaTeX beamer style for Nankai University, the style file is `nkcolor.sty` and the example file is `slides.tex`.
-2. These files are initially based on [Edward Hartley's work](http://www-control.eng.cam.ac.uk/Main/EdwardHartley), and [@teancake](https://github.com/teancake) from BUAA(Beihang University, 北京航空航天大学) gave a [Beihang version Beamer style](https://github.com/teancake/latex-beamer-beihang) from that work.
+[LaTeX beamer style for USTB](./beamer_nankai)
+1. These files are initially based on [南开大学模板](https://github.com/zshicode/LaTeX-Beamer-Nankai),
+2. This is an unofficial LaTeX beamer style for USTB, the style file is `nkcolor.sty` and the example file is `slides.tex`.
 3. Link to Thesis Templates：[南开大学本科生毕业论文LaTeX模板](https://github.com/kongxiao0532/NKU_Bachelor_Thesis_Template)，[南开大学硕博毕业论文LaTeX模板](https://github.com/NewFuture/NKThesis)
 
 To compile the slides, use:
